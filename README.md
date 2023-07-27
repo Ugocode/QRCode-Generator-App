@@ -2,7 +2,9 @@
 
 A new Flutter project.
 
-This is a Fluter Chrome Extension App Project
+This is a Flutter Chrome Extension App Project.
+
+You can use it to genereate any url or phone number QR Code 
 
 ## Getting Started
 
