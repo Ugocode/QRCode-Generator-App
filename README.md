@@ -6,7 +6,7 @@ This is a Flutter Chrome Extension App Project.
 
 This project looks like this: 
 
-<img src="./qrcode11.png" width=250 height=500 >
+<img src="./qrcode11.png" width=750 height=350 >
 
 
 
