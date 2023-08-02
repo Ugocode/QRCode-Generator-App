@@ -42,17 +42,25 @@ class _QRViewState extends State<QRView> {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(16),
-              child: QrImageView(
-                data: qrText,
-                padding: const EdgeInsets.all(16),
-                backgroundColor: qrBackgroundColors[qrBackgroundColorIndex],
-                eyeStyle: QrEyeStyle(
-                  color: qrColors[qrColorIndex],
-                  eyeShape: QrEyeShape.square,
+            Container(
+              decoration: const BoxDecoration(
+                  color: Colors.black54,
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(16),
+                  child: QrImageView(
+                    data: qrText,
+                    padding: const EdgeInsets.all(16),
+                    backgroundColor: qrBackgroundColors[qrBackgroundColorIndex],
+                    eyeStyle: QrEyeStyle(
+                      color: qrColors[qrColorIndex],
+                      eyeShape: QrEyeShape.square,
+                    ),
+                    foregroundColor: qrColors[qrColorIndex],
+                  ),
                 ),
-                foregroundColor: qrColors[qrColorIndex],
               ),
             ),
             Expanded(
@@ -73,7 +81,7 @@ class _QRViewState extends State<QRView> {
                         labelStyle: const TextStyle(
                           color: Color(0xFF80919F),
                         ),
-                        hintText: 'Enter text / URL',
+                        hintText: 'Enter URL or Text',
                         hintStyle: const TextStyle(
                           color: Color(0xFF80919F),
                         ),
