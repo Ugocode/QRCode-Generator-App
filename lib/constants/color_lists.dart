@@ -15,5 +15,6 @@ const List<Color> qrColors = [
   Colors.blue,
   Colors.green,
   Colors.brown,
-  Colors.pink
+  Colors.pink,
+  Colors.red,
 ];
