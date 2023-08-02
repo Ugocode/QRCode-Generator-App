@@ -2,6 +2,16 @@
 
 A new Flutter project.
 
+This is a Flutter Chrome Extension App Project.
+
+This project looks like this: 
+
+<img src="./qrcode11.png" width=750 height=350 >
+
+
+
+You can use it to generate any URL or phone number QR Code 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
